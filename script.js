@@ -22,6 +22,10 @@ audioMusic.addEventListener('timeupdate', () => {
     let totalDuration = audioMusic.duration;
     let progress = currentTime/ totalDuration;
     progressBar.value = progress;
+
+    if (progress === 1){
+        nextSlide();
+    }
 });
 
 progressBar.addEventListener('click', (event) => {
