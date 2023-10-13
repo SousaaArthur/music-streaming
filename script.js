@@ -154,7 +154,7 @@ function showSlide(n) {
 
         musicName.innerText = 'Sweater Weather';
         authorName.innerText = 'The Neighbourhood';
-
+        
         if (iconPlay.style.display == 'block'){
             audioMusic.pause();
             iconPlay.style.display = 'block';
