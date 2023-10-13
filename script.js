@@ -78,6 +78,61 @@ function showSlide(n) {
         audioMusic.play();
         iconPlay.style.display = 'none';
         iconPause.style.display = 'block';
+    } else if (n === 3) {
+        audioMusic.src = './assets/songs/505 - Arctic Monkeys/Song-505.mp3';
+
+        progressBar.value = '0';
+
+        musicName.innerText = '505';
+        authorName.innerText = 'Arctic Monkeys';
+
+        audioMusic.play();
+        iconPlay.style.display = 'none';
+        iconPause.style.display = 'block';
+    } else if (n === 4) {
+        audioMusic.src = './assets/songs/Come Together - The Beatles/Song-Come-Together.mp3';
+
+        progressBar.value = '0';
+
+        musicName.innerText = 'Come Together';
+        authorName.innerText = 'The Beatles';
+
+        audioMusic.play();
+        iconPlay.style.display = 'none';
+        iconPause.style.display = 'block';
+    } else if (n === 5) {
+        audioMusic.src = './assets/songs/Happier Than Ever - Billie Eilish/Song-Happier-Than-Ever.mp3';
+
+        progressBar.value = '0';
+
+        musicName.innerText = 'Happier Than Ever';
+        authorName.innerText = 'Billie Eilish';
+
+        audioMusic.play();
+        iconPlay.style.display = 'none';
+        iconPause.style.display = 'block';
+    } else if (n === 6) {
+        audioMusic.src = './assets/songs/Sweater Weather - The Neighbourhood/Song-Sweater-Weather.mp3';
+
+        progressBar.value = '0';
+
+        musicName.innerText = 'Sweater Weather';
+        authorName.innerText = 'The Neighbourhood';
+
+        audioMusic.play();
+        iconPlay.style.display = 'none';
+        iconPause.style.display = 'block';
+    } else if (n === 7) {
+        audioMusic.src = './assets/songs/The Nights -Avicii/Song-The-Nights.mp3';
+
+        progressBar.value = '0';
+
+        musicName.innerText = 'The Nights';
+        authorName.innerText = 'Avicii';
+
+        audioMusic.play();
+        iconPlay.style.display = 'none';
+        iconPause.style.display = 'block';
     }
 }
 
