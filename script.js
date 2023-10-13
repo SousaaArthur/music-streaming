@@ -15,7 +15,7 @@ BtnPlayAndPause.addEventListener('click', () => {
     }
 });
 
-const progressBar = document.getElementById('progressBar')
+const progressBar = document.getElementById('progressBar');
 
 audioMusic.addEventListener('timeupdate', () => {
     let currentTime = audioMusic.currentTime;
@@ -44,30 +44,36 @@ function showSlide(n) {
     if (n === 0) {
         audioMusic.src = './assets/songs/Pleaser - Wallows/Song-Pleaser.mp3';
 
+        progressBar.value = '0';
+
         musicName.innerText = 'Pleaser';
         authorName.innerText = 'Wallows';
 
-        audioMusic.pause();
-        iconPlay.style.display = 'block';
-        iconPause.style.display = 'none';
+        audioMusic.play();
+        iconPlay.style.display = 'none';
+        iconPause.style.display = 'block';
     } else if (n === 1) {
         audioMusic.src = './assets/songs/Sinking Ship - The Backseat Lovers/Song-Sinking-Ship.mp3';
+
+        progressBar.value = '0';
 
         musicName.innerText = 'Sinking Ship';
         authorName.innerText = 'The Backseat Lovers';
 
-        audioMusic.pause();
-        iconPlay.style.display = 'block';
-        iconPause.style.display = 'none';
+        audioMusic.play();
+        iconPlay.style.display = 'none';
+        iconPause.style.display = 'block';
     } else if (n === 2) {
         audioMusic.src = './assets/songs/Cold - Maroon 5/Song-Cold.mp3';
+
+        progressBar.value = '0';
 
         musicName.innerText = 'Cold';
         authorName.innerText = 'Maroon 5';
 
-        audioMusic.pause();
-        iconPlay.style.display = 'block';
-        iconPause.style.display = 'none';
+        audioMusic.play();
+        iconPlay.style.display = 'none';
+        iconPause.style.display = 'block';
     }
 }
 
