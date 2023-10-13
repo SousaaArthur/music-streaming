@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="libs/fontawesome-free-6.4.2-web/css/all.min.css">
+    <title>Spotlify Music</title>
+</head>
+<body>
+    <div class="panel">
+        <div class="slider-song-cover">
+            <div class="song-cover">
+                <img src="./assets/songs/Pleaser - Wallows/SongCoverWallows.jpg" alt="">
+            </div>
+            <div class="song-cover">
+                <img src="./assets/songs/Sinking Ship - The Backseat Lovers/SongCoverTheBackseatLovers.jpg" alt="">
+            </div>
+            <div class="song-cover">
+                <img src="./assets/songs/Cold - Maroon 5/SongCoverMaroon5.png" alt="">
+            </div>
+        </div>
+        <div class="controls-panel">
+            <div class="music-name">
+                <h1 id="musicName">Pleaser</h1>
+                <p id="authorName">Wallows</p>
+            </div>
+            <div class="progress-bar">
+                <progress type="range" id="progressBar" min="0" max="1" step="0.01" value="0" ></progress>
+            </div>
+            <div class="btn-group">
+                <div class="btn-return-song" id="previousBtn">
+                    <i class="fa-solid fa-backward-fast"></i>
+                </div>
+                <div class="btn-play-song">
+                    <i class="fa-solid fa-play" id="iconPlay"></i>
+                    <i class="fa-solid fa-pause" id="iconPause"></i>
+                </div>
+                <div class="btn-advances-song" id="nextBtn">
+                    <i class="fa-solid fa-forward-fast"></i>
+                </div>
+            </div>
+            <div class="by-arthurdev">
+                <p>
+                    Create by <a href="https://www.instagram.com/arthurdev._/">Arthur._</a>
+                </p>
+                <a href="https://github.com/SousaaArthur">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="audio-song">
+        <audio src="./assets/songs/Pleaser - Wallows/Song-Pleaser.mp3" id="audioMusic"></audio>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+<audio src="./assets/songs/Cold - Maroon 5/Song-Cold.mp3"></audio>
