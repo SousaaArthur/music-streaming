@@ -9,11 +9,29 @@
 }
 
 body{
+    margin: 0;
+    padding: 0;
     background: linear-gradient(to top left, #191919, #1a492b, #24d262);
+    background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh
+}
+
+.panel-developer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 5.5rem;
+    width: 15rem;
+    gap: 1rem;
+    margin-right: 50rem;
+    border-radius: 15px;
+    background-color:  #0e0e0e;
+    color: #adadad;
 }
 
 .panel{
@@ -26,6 +44,80 @@ body{
     border-radius: 15px;
 }
 
+.music-order-panel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 0rem;
+    width: 25rem;
+    overflow: hidden;
+    border-radius: 15px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.change-playlist-order{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 36rem;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.start-music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.5rem;
+    width: 100%;
+    background-color: #0e0e0e;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.information-music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    margin-left: .5rem;
+}
+
+.img-song-cover img{
+    border-radius: 8px;
+    height: 3.5rem;
+}
+
+.titles-music h3{
+    color: #c4c2c2;
+}
+
+.titles-music p{
+    color: #adadad;
+}
+
+.btns-start-music{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    gap: 1rem;
+    font-size: 30px;
+    color: #fafafa;
+}
+
+.panel-play-music{
+    display: flex;
+    flex-direction: column;
+    max-height: 40rem;
+    width: 25rem;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: .5s;
+    background-color: #0e0e0e;
+}
+
 .slider-song-cover{
     position: relative;
     display: flex;
@@ -33,6 +125,7 @@ body{
     height: 65rem;
     width: 100%;
     overflow: hidden;
+    margin-top: 2rem;
 }
 
 .slider-song-cover img{
@@ -46,8 +139,11 @@ body{
 }
 
 .controls-panel{
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     gap: .5rem;
@@ -65,12 +161,25 @@ body{
     color: #adadad;
 }
 
+
 .progress-bar{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 3rem;
+    flex-direction: column;
     width: 100%;
+}
+
+.music-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    color: #adadad;
+}
+
+#currentTime{
+    transition: .5s;
 }
 
 progress{
@@ -110,16 +219,17 @@ progress::-webkit-progress-bar {
     cursor: pointer;
 }
 
+
+.btn-play-song .iconPause{
+    display: none;
+}
+
 .btn-play-song{
     cursor: pointer;
 }
 
 .btn-advances-song{
     cursor: pointer;
-}
-
-#iconPause{
-    display: none;
 }
 
 .by-arthurdev{
@@ -130,10 +240,16 @@ progress::-webkit-progress-bar {
     height: 3rem;
     width: 100%;
     gap: .3rem;
+    margin-bottom: 1rem;
 }
 
 .by-arthurdev p {
     color: #ada8a8;
+}
+
+.social-network{
+    display: flex;
+    gap: 1rem;
 }
 
 .by-arthurdev a{
@@ -147,19 +263,4 @@ progress::-webkit-progress-bar {
     margin-bottom: .5rem;
 }
 
-@media (max-width: 396px){
-    .panel{
-        width: 100%;
-        height: 100%;
-        border-radius: 0%;
-    }
 
-    .slider-song-cover{
-        height: 25rem;
-    }
-
-    .controls-panel{
-        height: 10rem;
-        gap: 3rem;
-    }
-}

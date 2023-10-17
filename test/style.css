@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#music-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.music {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: grab;
+}

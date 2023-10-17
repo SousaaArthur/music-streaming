@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #c9c9c9;
+    transition: .4s;
+}
+
+.border-check{
+    height: 2rem;
+    width: 4rem;
+    border-radius: 15px;
+    background-color: #189945;
+    box-shadow: 0px 0px 10px #000;
+    transition: .4s;
+}
+
+.btn-check{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 0rem;
+    border-radius: 15px;
+    background-color: #24d262;
+    box-shadow: 0px 0px 5px #000000;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.active{
+    margin-left: 2rem;
+}

@@ -6,63 +6,116 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="libs/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="shortcut icon" href="./assets/imgs/favicon/spotify.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/button check/style.css">
     <title>Spotlify Music</title>
 </head>
 <body>
-    <div class="panel">
-        <div class="slider-song-cover">
-            <div class="song-cover">
-                <img src="./assets/songs/Pleaser - Wallows/SongCoverWallows.jpg" alt="">
-            </div>
-            <div class="song-cover">
-                <img src="./assets/songs/Sinking Ship - The Backseat Lovers/SongCoverTheBackseatLovers.jpg" alt="">
-            </div>
-            <div class="song-cover">
-                <img src="./assets/songs/Cold - Maroon 5/SongCoverMaroon5.png" alt="">
-            </div>
-            <div class="song-cover">
-                <img src="./assets/songs/505 - Arctic Monkeys/SongCoverArcticMonkeys.jpg" alt="">
-            </div>
-            <div class="song-cover">
-                <img src="./assets/songs/Come Together - The Beatles/SongCoverTheBeatles.jpg" alt="">
-            </div>
-            <div class="song-cover">
-                <img src="./assets/songs/Happier Than Ever - Billie Eilish/SongCoverBillieEilish.jpg" alt="">
-            </div>
-            <div class="song-cover">
-                <img src="./assets/songs/Sweater Weather - The Neighbourhood/SongCoverTheNeighbourhood.jpg" alt="">
-            </div>
-            <div class="song-cover">
-                <img src="./assets/songs/The Nights -Avicii/SongCoverAvicii.jpg" alt="">
+    <div class="panel-developer">
+        <p>Ativa painel de musica</p>
+        <div class="border-check">
+            <div class="btn-check active">
+                
             </div>
         </div>
-        <div class="controls-panel">
-            <div class="music-name">
-                <h1 id="musicName">Pleaser</h1>
-                <p id="authorName">Wallows</p>
+    </div>
+    <div class="panel">
+        <div class="music-order-panel">
+            <div class="change-playlist-order">
+
             </div>
-            <div class="progress-bar">
-                <progress type="range" id="progressBar" min="0" max="1" step="0.01" value="0" ></progress>
+            <div class="start-music">
+                <div class="information-music">
+                    <div class="img-song-cover">
+                        <img src="./assets/songs/Pleaser - Wallows/SongCoverWallows.jpg" alt="" id="imgSongCover">
+                    </div>
+                    <div class="titles-music">
+                        <h3 class="musicName">Pleaser</h3>
+                        <p class="authorName">Wallows</p>
+                    </div>
+                </div>
+                <div class="btns-start-music">
+                    <div class="btn-return-song previousBtn">
+                        <i class="fa-solid fa-backward-fast"></i>
+                    </div>
+                    <div class="btn-play-song">
+                        <i class="fa-solid fa-play iconPlay"></i>
+                        <i class="fa-solid fa-pause iconPause"></i>
+                    </div>
+                    <div class="btn-advances-song nextBtn">
+                        <i class="fa-solid fa-forward-fast"></i>
+                    </div>
+                </div>
             </div>
-            <div class="btn-group">
-                <div class="btn-return-song" id="previousBtn">
-                    <i class="fa-solid fa-backward-fast"></i>
+        </div>
+        <div class="panel-play-music">
+            <div class="slider-song-cover">
+                <div class="song-cover">
+                    <img src="./assets/songs/Pleaser - Wallows/SongCoverWallows.jpg" alt="">
                 </div>
-                <div class="btn-play-song">
-                    <i class="fa-solid fa-play" id="iconPlay"></i>
-                    <i class="fa-solid fa-pause" id="iconPause"></i>
+                <div class="song-cover">
+                    <img src="./assets/songs/Sinking Ship - The Backseat Lovers/SongCoverTheBackseatLovers.jpg" alt="">
                 </div>
-                <div class="btn-advances-song" id="nextBtn">
-                    <i class="fa-solid fa-forward-fast"></i>
+                <div class="song-cover">
+                    <img src="./assets/songs/Cold - Maroon 5/SongCoverMaroon5.png" alt="">
+                </div>
+                <div class="song-cover">
+                    <img src="./assets/songs/505 - Arctic Monkeys/SongCoverArcticMonkeys.jpg" alt="">
+                </div>
+                <div class="song-cover">
+                    <img src="./assets/songs/Come Together - The Beatles/SongCoverTheBeatles.jpg" alt="">
+                </div>
+                <div class="song-cover">
+                    <img src="./assets/songs/Happier Than Ever - Billie Eilish/SongCoverBillieEilish.jpg" alt="">
+                </div>
+                <div class="song-cover">
+                    <img src="./assets/songs/Sweater Weather - The Neighbourhood/SongCoverTheNeighbourhood.jpg" alt="">
+                </div>
+                <div class="song-cover">
+                    <img src="./assets/songs/The Nights -Avicii/SongCoverAvicii.jpg" alt="">
+                </div>
+            </div>
+            <div class="controls-panel">
+                <div class="music-name">
+                    <h1 class="musicName">Pleaser</h1>
+                    <p class="authorName">Wallows</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="music-time">
+                        <p id="currentTime">
+                            0:00
+                        </p>
+                        <p id="finalTime">
+                            0:00
+                        </p>
+                    </div>
+                    <progress type="range" id="progressBar" min="0" max="1" step="0.01" value="0" ></progress>
+                </div>
+                <div class="btn-group">
+                    <div class="btn-return-song previousBtn">
+                        <i class="fa-solid fa-backward-fast"></i>
+                    </div>
+                    <div class="btn-play-song">
+                        <i class="fa-solid fa-play iconPlay"></i>
+                        <i class="fa-solid fa-pause iconPause"></i>
+                    </div>
+                    <div class="btn-advances-song nextBtn">
+                        <i class="fa-solid fa-forward-fast"></i>
+                    </div>
                 </div>
             </div>
             <div class="by-arthurdev">
                 <p>
                     Create by <a href="https://www.instagram.com/arthurdev._/">arthurdev._</a>
                 </p>
-                <a href="https://github.com/SousaaArthur">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+                <div class="social-network">
+                    <a href="https://github.com/SousaaArthur">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arthurdev/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div> 
             </div>
         </div>
     </div>
