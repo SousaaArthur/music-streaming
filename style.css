@@ -21,7 +21,7 @@ body{
 
 .panel-developer{
     position: absolute;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -48,12 +48,17 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-height: 0rem;
+    max-height: 40rem;
     width: 25rem;
     overflow: hidden;
     border-radius: 15px;
-    opacity: 0;
+    opacity: 1;
     transition: .5s;
+}
+
+.choose-playlist{
+    height: 3rem;
+    background-color: #1a492b;
 }
 
 .change-playlist-order{
@@ -62,14 +67,59 @@ body{
     flex-direction: column;
     height: 36rem;
     width: 100%;
+    margin-top: .5rem;
     border-radius: 15px;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+}
+
+.container-music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    margin: .6rem;
+}
+
+.music-cover img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    border-radius: 8px;
+}
+
+.music-names h3{
+    color: #c4c2c2;
+}
+
+.music-names p{
+    color: #adadad;
+}
+
+.container-like-music{
+    display: flex;
+    margin: .7rem;
+    gap: 1.5rem;
+    font-size: 22px;
+    color: #adadad;
+}
+
+.move-music{
+    cursor: pointer;
 }
 
 .start-music{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 4.5rem;
+    height: 5rem;
     width: 100%;
     background-color: #0e0e0e;
     border-bottom-left-radius: 15px;
@@ -110,11 +160,12 @@ body{
 .panel-play-music{
     display: flex;
     flex-direction: column;
-    max-height: 40rem;
+    max-height: 0rem;
     width: 25rem;
     overflow: hidden;
     border-radius: 15px;
     transition: .5s;
+    opacity: 0;
     background-color: #0e0e0e;
 }
 
@@ -262,5 +313,3 @@ progress::-webkit-progress-bar {
     color: #ada8a8;
     margin-bottom: .5rem;
 }
-
-
