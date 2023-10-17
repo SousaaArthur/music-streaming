@@ -225,14 +225,11 @@ allNextBtn.forEach( (nextBtn) => {
 
 $(function () {
     $("#changePlaylistOrder").sortable({
-        axis: "y",  // Permitir arrastar apenas verticalmente
-        containment: "parent",  // Restringe o movimento ao container pai
+        axis: "y",
+        containment: "parent",
         handle: ".move-music",
         update: function (event, ui) {
-            // Lógica a ser executada após reorganizar as músicas
             console.log("Ordem atualizada!");
         }
-    });
-
-    // Adicione outras lógicas conforme necessário
+    }).disableSelection();
 });
